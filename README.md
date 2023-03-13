@@ -106,3 +106,5 @@ Currently the only available solver is the "roadload" solver, which simulates ri
 In general, we put the problem in state-space formulation and solve in MATLAB using ODE45. The equations below detail how to reformulate the typical equations of motion for use with this solver, which in general requires some matrix partitioning.
 
 ![EOM](https://github.com/jscans12/chassis-dynamics/blob/main/docs/eom.png)
+
+Mass, stiffness, and damping matrices come from the vehicle model detailed above. An eventual goal of this page will be to detail the derivation of the matrices, but I lost those notes so the code will have to suffice for the time being. See the KGG, MGG, and BGG functions in the class chassis_dynamics.sequence.roadload.residual for more details on the final form of these matrices in the meantime. The only nonlinearity included at the moment is tire contact with the road, which causes occasional updates of the stiffness and damping matrices.
