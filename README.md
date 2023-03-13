@@ -15,36 +15,36 @@ The tire is modelled as a spring/damper in parallel. Tire outer diameter is inte
 The following parameters are needed to create a typical simple vehicle model, but some level of front/rear asymmetry is supported by the code if needed:
 
 #### Dimensional
-Wheelbase
-Track width
+- Wheelbase
+- Track width
 
 #### Inertial
-Sprung mass
-Sprung moment of inertia
-CG location from front axle and ground plane
-Front unsprung mass
-Rear unsprung mass
+- Sprung mass
+- Sprung moment of inertia
+- CG location from front axle and ground plane
+- Front unsprung mass
+- Rear unsprung mass
 
 #### Aerodynamic
-Aerodynamic center of pressure
-Aerodynamic scaled coefficients
+- Aerodynamic center of pressure
+- Aerodynamic scaled coefficients
 
 #### Suspension, Corners
-Front spring rate
-Rear spring rate
-Front damping coefficient
-Rear damping coefficient
-Front motion ratio
-Rear motion ratio
+- Front spring rate
+- Rear spring rate
+- Front damping coefficient
+- Rear damping coefficient
+- Front motion ratio
+- Rear motion ratio
 
 #### Suspension, Roll
-Front antiroll rate
-Rear antiroll rate
+- Front antiroll rate
+- Rear antiroll rate
 
 #### Tires
-Tire radius
-Tire spring rate
-Tire damping coefficient
+- Tire radius
+- Tire spring rate
+- Tire damping coefficient
 
 ## Prerequisites
 You must have MATLAB R2019a or later (earlier versions may work but are untested), and also must have the h5io package on your MATLAB path. The h5io package can be found either on [GitHub](https://github.com/jscans12/h5io) or the [MATLAB FileExchange](https://www.mathworks.com/matlabcentral/fileexchange/126235-h5io).
