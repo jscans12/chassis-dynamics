@@ -33,6 +33,7 @@ Sample Plots:
 ![Wheel Motion](https://github.com/jscans12/chassis-dynamics/blob/main/docs/wheel_motion.png)
 
 Screenshot of Video:
+
 ![Video Capture](https://github.com/jscans12/chassis-dynamics/blob/main/docs/visualization.png)
 
 ## Model Overview
