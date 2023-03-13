@@ -106,6 +106,3 @@ Currently the only available solver is the "roadload" solver, which simulates ri
 In general, we put the problem in state-space formulation and solve in MATLAB using ODE45. The equations below detail how to reformulate the typical equations of motion for use with this solver, which in general requires some matrix partitioning.
 
 ![EOM](https://github.com/jscans12/chassis-dynamics/blob/main/docs/eom.png)
-
-### Matrix Formulation
-TBD, I lost my notes so need to re-translate K, M, and B from code.
