@@ -71,6 +71,8 @@ The above described parameters are sufficient to create a ride dynamics simulati
 Currently the only available solver is the "roadload" solver, which simulates ride dynamics. This will be described below.
 
 ### Solution Formulation
+In general, we put the problem in state-space formulation and solve in MATLAB using ODE45. The equations below detail how to reformulate the typical equations of motion for use with this solver, which in general requires some matrix partitioning.
 
+![EOM](https://github.com/jscans12/chassis-dynamics/blob/main/docs/eom.png)
 
 ### Matrix Formulation
