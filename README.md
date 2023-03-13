@@ -9,19 +9,19 @@ This repository comes with several example files, as described below:
 ### Contents
 
 Create a world model:
-examples/sim_models/environments/warm_day.m
+- examples/sim_models/environments/warm_day.m
 
 Create a road model:
-examples/sim_models/roads/cobblestone.m
+- examples/sim_models/roads/cobblestone.m
 
 Create a vehicle model:
-examples/sim_models/vehicles/minivan.m
+- examples/sim_models/vehicles/minivan.m
 
 Run a sample simulation:
-examples/send_it.m - go over a jump, demonstrate wheel contact
-examples/left_side_speedbump.m - starts left front wheel on a speed bump, demonstrate IC solver
-examples/skidpad_and_bump.m - hits a speed bump while turning, demonstrates lateral acceleration
-examples/cobblestone_road.m - runs the cobblestone road, demonstrates time consuming solve
+- examples/send_it.m - go over a jump, demonstrate wheel contact
+- examples/left_side_speedbump.m - starts left front wheel on a speed bump, demonstrate IC solver
+- examples/skidpad_and_bump.m - hits a speed bump while turning, demonstrates lateral acceleration
+- examples/cobblestone_road.m - runs the cobblestone road, demonstrates time consuming solve
 
 ### Sample output
 
@@ -29,11 +29,11 @@ Here we run the sample file examples/send_it.m to test an example simulation. Th
 
 Sample Plots:
 
-
+![CG Motion](https://github.com/jscans12/chassis-dynamics/blob/main/docs/cg_motion.png)
+![Wheel Motion](https://github.com/jscans12/chassis-dynamics/blob/main/docs/wheel_motion.png)
 
 Screenshot of Video:
-
-
+![Video Capture](https://github.com/jscans12/chassis-dynamics/blob/main/docs/visualization.png)
 
 ## Model Overview
 This is a chassis simulation tool written purely in MATLAB. It is currently intended to primarily simulate ride dynamics. Note all units are assumed to be in SI.
