@@ -1,10 +1,13 @@
 # Chassis-Dynamics
 
-## Overview
+## Prerequisites
+You must have MATLAB R2019a or later (earlier versions may work but are untested), and also must have the h5io package on your MATLAB path. The h5io package can be found either on [GitHub](https://github.com/jscans12/h5io) or the [MATLAB FileExchange](https://www.mathworks.com/matlabcentral/fileexchange/126235-h5io).
+
+## Models
 This is a chassis simulation tool written purely in MATLAB. It is currently intended to primarily simulate ride dynamics. Note all units are assumed to be in SI.
 
 ### Vehicle Model
-The chassis itself is a 4-corner car model. It includes suspension components found in most road vehicles.
+Currently the only available model is the "simple_car", which is a 4-corner car model. It includes suspension components found in most road vehicles.
 
 ![Chassis Model](https://github.com/jscans12/chassis-dynamics/blob/main/docs/diagram.png)
 
@@ -46,5 +49,20 @@ The following parameters are needed to create a typical simple vehicle model, bu
 - Tire spring rate
 - Tire damping coefficient
 
-## Prerequisites
-You must have MATLAB R2019a or later (earlier versions may work but are untested), and also must have the h5io package on your MATLAB path. The h5io package can be found either on [GitHub](https://github.com/jscans12/h5io) or the [MATLAB FileExchange](https://www.mathworks.com/matlabcentral/fileexchange/126235-h5io).
+### World Model
+The external world is modeled with simple ambient conditions:
+
+- Temperature
+- Atmospheric pressure
+- Relative humidity
+
+### Road Model
+Currently the only available road model is the "simple_road", which prescribes a path for the vehicle as described below. The path must include the following vectors:
+
+- Time
+- Distance forward
+- Yaw rate
+- Left road profile vertical displacement
+- Right road profile vertical displacement
+
+The above described parameters are sufficient to create a ride dynamics simulation.
