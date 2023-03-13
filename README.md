@@ -66,3 +66,11 @@ Currently the only available road model is the "simple_road", which prescribes a
 - Right road profile vertical displacement
 
 The above described parameters are sufficient to create a ride dynamics simulation.
+
+## Solver
+Currently the only available solver is the "roadload" solver, which simulates ride dynamics. This will be described below.
+
+### Solution Formulation
+
+
+### Matrix Formulation
